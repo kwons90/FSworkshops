@@ -3,18 +3,34 @@ h1 {
     padding: 10px;
 }
 
-.employeeBox {
+.employeeBoxNotFav {
     font-family: Arial, Helvetica, sans-serif;
-    width:30%;
-    justify-content: space-between;
-    align-items: center;
+    margin: 1rem;
     border: solid 1px black;
+    background-color: linen;
+    padding: 1rem;
+    width: calc(100%/3 - 2rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    border-radius: 1rem;
+}
+
+.employeeBoxFav {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+    border: solid 1px black;
+    background-color: lightcyan;
+    padding: 1rem;
+    width: calc(100%/3 - 2rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    border-radius: 1rem;
 }
 
 #app {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
+    box-sizing: border-box;
 }
